@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --text-color :#8a8a8a;
+    --text-color-2 : #1166c2;
+    --background-color : #f3f2ef;
+}
+
+p{
+    color:  var(--text-color);
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+
+main{
+    display: flex;
+    padding: 2rem 8.438rem 0 8.438rem;
+    gap: 2rem;
+}
+
+.left-content, .right-content, .middle-content{
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+}
+
+.left-content, .right-content{
+    width: 270px;
+    /* height: 500px; */
+}
+
+.profile-preview{
+    border-radius: 8px;
+    background-color: white;
+    /* height: 500px; */
+    overflow: hidden;
+}
+
+.profile-preview > .profile-preview-items{
+    /* min-height: 36px; */
+    /* width: 100%; */
+    border-bottom: 1px solid #E0E0E0;
+    position: relative;
+    padding: 16px 10px;
+}
+
+.profile-preview-items > a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 10px;
+}
+
+.profile-preview-items > a:hover{
+    background-color: var(--background-color);
+}
+
+.profile-preview-items > a > p:nth-child(2){
+    color: var(--text-color-2);
+}
+
+.profile-preview-items:nth-child(2){
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.bg-holder{
+    height: 54px;
+    overflow: hidden;
+    background-image: url('./img/bg-holder.jpg');
+    background-size: cover;
+}
+
+.bg-profile-photo{
+    height: 68px;
+    width: 68px;
+    background-image: url('img/profile.jpg');
+    background-size: cover;
+    border-radius: 100%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform:  translateX(-50%);
+}
+
+.name-description{
+    text-align: center;
+    /* padding-top: 64px 10px 16px 10px; */
+    padding-top: 64px;
+}
+
+.middle-content{
+    flex-grow: 3;
+}
