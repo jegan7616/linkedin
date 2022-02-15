@@ -98,3 +98,15 @@ main{
 .middle-content{
     flex-grow: 3;
 }
+
+/*main*/
+
+.artdeco-card {
+    overflow: visible;
+    height: 100%!important;
+    background-color:#fff !important;
+    border-radius:0.8rem !important;
+    border: none!important;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08) !important;
+}
+
